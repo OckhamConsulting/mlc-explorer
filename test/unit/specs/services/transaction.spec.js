@@ -17,6 +17,7 @@ const transactionPropertyArray = [
 
 describe('Transaction Service', () => {
   beforeAll(() => {
+ // store.dispatch('network/setServer', 'https://explorer.laroue.orgo/api/v2')
     store.dispatch('network/setServer', 'https://explorer.ark.io/api/v2')
   })
 

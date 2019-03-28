@@ -10,15 +10,15 @@ const localVue = createLocalVue()
 localVue.use(VueI18n)
 localVue.use(Vuex)
 const i18n = new VueI18n({
-  locale: 'en-gb',
-  fallbackLocale: 'en-gb',
-  messages: { 'en-gb': {} },
+  locale: 'fr',
+  fallbackLocale: 'fr',
+  messages: { 'fr': {} },
   silentTranslationWarn: true
 })
 
 describe('Utils/Currency', () => {
   it('Should display a currency amount', () => {
-    store.dispatch('network/setToken', 'ARK')
+    store.dispatch('network/setToken', 'MLC')
 
     const wrapper = mount(Currency, {
       propsData: {

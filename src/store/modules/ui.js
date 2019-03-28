@@ -3,8 +3,8 @@ import * as types from '../mutation-types'
 export default {
   namespaced: true,
   state: {
-    language: 'en-gb',
-    locale: navigator.language || 'en-gb',
+    language: 'fr',
+    locale: navigator.language || 'fr',
     nightMode: false,
     priceChart: true,
     priceChartPeriod: 'day',

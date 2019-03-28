@@ -35,7 +35,7 @@
       "transactionsCount": 0,
       "height": 3146858,
       "delegate": {
-        "username": "arknet",
+        "username": "mlcnet",
         "address": "AXzEMF7TC1aH3ax1Luxk6XdyKXDRxnBj4f",
         "publicKey":
           "0217ff1ec656f2354a899bde097bb3131a9730fe491bb87dedb96489120be9154f",
@@ -104,7 +104,7 @@
       "transactionsCount": 0,
       "height": 3146855,
       "delegate": {
-        "username": "arkpool",
+        "username": "mlcpool",
         "address": "ARAq9nhjCxwpWnGKDgxveAJSijNG8Y6dFQ",
         "publicKey":
           "02b1d2ea7c265db66087789f571fceb8cc2b2d89e296ad966efb8ed51855f2ae0b",
@@ -242,7 +242,7 @@
       "transactionsCount": 0,
       "height": 3146849,
       "delegate": {
-        "username": "arkland",
+        "username": "mlcland",
         "address": "ATHAwQnSZCRXvNkBtWn5AkGyVrFdSRH756",
         "publicKey":
           "0386d5a3cd292ffaa9a3b73c556453326780e092015141efaed347c4c50c7886bb",
@@ -288,7 +288,7 @@
       "transactionsCount": 0,
       "height": 3146847,
       "delegate": {
-        "username": "arkpool",
+        "username": "mlcpool",
         "address": "ARAq9nhjCxwpWnGKDgxveAJSijNG8Y6dFQ",
         "publicKey":
           "02b1d2ea7c265db66087789f571fceb8cc2b2d89e296ad966efb8ed51855f2ae0b",
@@ -334,7 +334,7 @@
       "transactionsCount": 0,
       "height": 3146845,
       "delegate": {
-        "username": "emotive_ark",
+        "username": "emotive_mlc",
         "address": "APzMVrARso9qatWF5VPCyDTttBFKjcNccL",
         "publicKey":
           "035a0302ddd571bb821f6b069450814cb29fc927f14f146491fd5c9b3ab57d8ca8",

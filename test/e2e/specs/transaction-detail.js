@@ -80,7 +80,7 @@ module.exports = {
       .waitForElementVisible('.list-row-border-b')
     browser
       .useXpath()
-      .expect.element("//div[contains(@class, 'list-row-border-b')][7]//div[2]").text.to.equal('ARK ❤️ you')
+      .expect.element("//div[contains(@class, 'list-row-border-b')][7]//div[2]").text.to.equal('MLC ❤️ you')
     browser.end()
   }
 

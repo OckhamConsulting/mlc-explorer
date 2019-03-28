@@ -3,7 +3,7 @@ import i18n from '@/i18n'
 describe('i18n', () => {
   it('should return a translation for a given phrase', () => {
     expect(i18n.t('No results')).toBe('No results')
-    expect(i18n.t('Reward (token)', { token: 'ARK' })).toBe('Reward (ARK)')
+    expect(i18n.t('Reward (token)', { token: 'MLC' })).toBe('Reward (MLC)')
   })
 
   it('should be possible to switch languages', () => {

@@ -13,6 +13,7 @@ const walletPropertyArray = [
 
 describe('Wallet Service', () => {
   beforeAll(() => {
+ // store.dispatch('network/setServer', 'https://explorer.laroue.org/api/v2')
     store.dispatch('network/setServer', 'https://explorer.ark.io/api/v2')
   })
 

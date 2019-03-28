@@ -12,9 +12,9 @@ localVue.use(VueI18n)
 localVue.use(Vuex)
 
 const i18n = new VueI18n({
-  locale: 'en-gb',
-  fallbackLocale: 'en-gb',
-  messages: { 'nl': {} },
+  locale: 'fr',
+  fallbackLocale: 'fr',
+  messages: { 'fr': {} },
   silentTranslationWarn: true
 })
 
@@ -25,12 +25,12 @@ const store = new Vuex.Store({
       state: {
         headerType: 'currencies',
         nightMode: false,
-        language: 'en-gb'
+        language: 'fr'
       },
       getters: {
         headerType: state => 'languages',
         nightMode: state => false,
-        language: state => 'en-gb'
+        language: state => 'fr'
       }
     },
   },
@@ -39,8 +39,8 @@ const store = new Vuex.Store({
 
 describe('header/languages/Desktop', () => {
   it('Should change language', () => {
-    i18n.locale = 'en-gb'
-    moment.locale('en-gb')
+    i18n.locale = 'fr'
+    moment.locale('fr')
 
     const dispatchMock = jest.fn()
     store.dispatch = dispatchMock
@@ -82,8 +82,8 @@ describe('header/languages/Desktop', () => {
 
 describe('header/languages/Mobile', () => {
   it('Should change language', () => {
-    i18n.locale = 'en-gb'
-    moment.locale('en-gb')
+    i18n.locale = 'fr'
+    moment.locale('fr')
 
     const dispatchMock = jest.fn()
     store.dispatch = dispatchMock

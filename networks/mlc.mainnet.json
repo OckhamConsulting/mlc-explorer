@@ -1,0 +1,54 @@
+{
+  "title": "MLC Explorer",
+  "server": "https://explorer.laroue.org/api/v2",
+  "alias": "Main",
+  "activeDelegates": 51,
+  "rewardOffset": 75600,
+  "currencies": {
+    "AUD": "A$",
+    "BRL": "R$",
+    "BTC": "Ƀ",
+    "CAD": "C$",
+    "CHF": "CHF",
+    "CNY": "¥",
+    "ETH": "Ξ",
+    "EUR": "€",
+    "GBP": "£",
+    "JPY": "¥",
+    "KRW": "₩",
+    "LTC": "Ł",
+    "NZD": "N$",
+    "RUB": "₽",
+    "USD": "$"
+  },
+  "knownWallets": {
+    "AYCTHSZionfGoQsRnv5gECEuFWcZXS38gs": "MLC Bounty",
+    "AWkBFnqvCF4jhqPSdE2HBPJiwaf67tgfGR": "MLC Community Fund",
+    "ANkHGk5uZqNrKFNY5jtd4A88zzFR3LnJbe": "MLC Hot Wallet",
+    "AZmQJ2P9xg5j6VPZWjcTzWDD4w7Qww2KGX": "MLC GitHub Bounty",
+    "AdTyTzaXPtj1J1DzTgVksa9NYdUuXCRbm1": "MLC Shield",
+    "AUDud8tvyVZa67p3QY7XPRUTjRGnWQQ9Xv": "MLC Team",
+    "AFrPtEmzu6wdVpa2CnRDEKGQQMWgq8nE9V": "Binance",
+    "AQkyi31gUbLuFp7ArgH9hUCewg22TkxWpk": "Binance Cold Wallet",
+    "AdS7WvzqusoP759qRo6HDmUz2L34u4fMHz": "Binance Cold Wallet II",
+    "Aakg29vVhQhJ5nrsAHysTUqkTBVfmgBSXU": "Binance Cold Wallet III",
+    "AUexKjGtgsSpVzPLs6jNMM6vJ6znEVTQWK": "Bittrex",
+    "AdA5THjiVFAWhcMo5QyTKF1Y6d39bnPR2F": "Changelly",
+    "AcPwcdDbrprJf8FNCE3dKZaTvPJT8y4Cqi": "COSS",
+    "AJbmGnDAx9y91MQCDApyaqZhn6fBvYX9iJ": "Cryptopia",
+    "AewxfHQobSc49a4radHp74JZCGP8LRe4xA": "Genesis Wallet",
+    "AcVHEfEmFJkgoyuNczpgyxEA3MZ747DRAu": "Livecoin",
+    "AZcK6t1P9Z2ndiYvdVaS7srzYbTn5DHmck": "OKEx",
+    "ANQftoXeWoa9ud9q9dd2ZrUpuKinpdejAJ": "Upbit"
+  },
+  "defaults": {
+    "token": "MLC",
+    "symbol": "☮",
+    "currency": {
+      "name": "EUR",
+      "symbol": "€"
+    },
+    "priceChart": true,
+    "priceChartPeriod": "day"
+  }
+}

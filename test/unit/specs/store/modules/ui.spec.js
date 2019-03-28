@@ -36,7 +36,7 @@ describe('ui store module', () => {
   })
 
   it('should have English set as default language', () => {
-    expect(store.getters['ui/language']).toEqual('en-gb')
+    expect(store.getters['ui/language']).toEqual('fr')
   })
 
   it('should set the language', () => {
@@ -46,7 +46,7 @@ describe('ui store module', () => {
   })
 
   it('should have navigator or English set as default locale', () => {
-    expect(store.getters['ui/locale']).toEqual(navigator.language || 'en-gb')
+    expect(store.getters['ui/locale']).toEqual(navigator.language || 'fr')
   })
 
   it('should set the locale', () => {

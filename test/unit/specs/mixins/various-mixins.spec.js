@@ -35,29 +35,29 @@ describe('isDelegateByPublicKey mixin', () => {
 
 describe('rawCurrency mixin', () => {
   it('should display selected cryptocurrency with 8 digits or less', () => {
-    store.dispatch('network/setToken', 'ARK')
-    expect(mixins.rawCurrency(10.1234567891234, 'ARK')).toEqual(displayCrypto(10.12345679))
+    store.dispatch('network/setToken', 'MLC')
+    expect(mixins.rawCurrency(10.1234567891234, 'MLC')).toEqual(displayCrypto(10.12345679))
     expect(mixins.rawCurrency(10.1234567891234, 'ETH')).toEqual(displayCrypto(10.12345679))
     expect(mixins.rawCurrency(10.1234567891234, 'BTC')).toEqual(displayCrypto(10.12345679))
-    expect(mixins.rawCurrency(10.12345, 'ARK')).toEqual(displayCrypto(10.12345))
+    expect(mixins.rawCurrency(10.12345, 'MLC')).toEqual(displayCrypto(10.12345))
   })
 
   it('should display non-cryptocurrency always with 2 digits', () => {
-    store.dispatch('network/setToken', 'ARK')
+    store.dispatch('network/setToken', 'MLC')
     expect(mixins.rawCurrency(10.1234567891, 'USD')).toEqual(displayFiat(10.12))
     expect(mixins.rawCurrency(10.1234567891, 'AUD')).toEqual(displayFiat(10.12))
     expect(mixins.rawCurrency(10.1234567891, 'EUR')).toEqual(displayFiat(10.12))
-    expect(mixins.rawCurrency(10.1, 'USD')).toEqual(displayFiat(10.10))
-    expect(mixins.rawCurrency(10, 'USD')).toEqual(displayFiat(10.00))
+    expect(mixins.rawCurrency(10.1, 'EUR')).toEqual(displayFiat(10.10))
+    expect(mixins.rawCurrency(10, 'EUR')).toEqual(displayFiat(10.00))
   })
 })
 
 describe('readableFiat mixin', () => {
   it('should display fiat currency with two digits', () => {
-    store.dispatch('currency/setName', 'USD')
-    store.dispatch('ui/setLocale', 'en-us')
-    expect(mixins.readableFiat(10.234)).toEqual('$10.23')
-    expect(mixins.readableFiat(10.23423478592034)).toEqual('$10.23')
+    store.dispatch('currency/setName', 'EUR')
+    store.dispatch('ui/setLocale', 'fr')
+    expect(mixins.readableFiat(10.234)).toEqual('10.23€')
+    expect(mixins.readableFiat(10.23423478592034)).toEqual('10.23€')
   })
 })
 
@@ -87,14 +87,14 @@ describe('readableCrypto mixin', () => {
 
 describe('networkToken mixin', () => {
   it('should return the set network token', () => {
-    store.dispatch('network/setToken', 'ARK')
-    expect(mixins.networkToken()).toEqual('ARK')
+    store.dispatch('network/setToken', 'MLC')
+    expect(mixins.networkToken()).toEqual('MLC')
   })
 
   it('should return the default network token', () => {
     store.dispatch('network/setToken', null)
-    store.dispatch('network/setDefaults', { token: 'DEFAULTARK' })
-    expect(mixins.networkToken()).toEqual('DEFAULTARK')
+    store.dispatch('network/setDefaults', { token: 'DEFAULTMLC' })
+    expect(mixins.networkToken()).toEqual('DEFAULTMLC')
   })
 
   it('should return an empty string if no token has been set', () => {

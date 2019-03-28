@@ -1,0 +1,15 @@
+{
+  "title": "DMLC Explorer",
+  "server": "https://dexplorer.laroue.org/api/v2",
+  "alias": "Development",
+  "activeDelegates": 51,
+  "rewardOffset": 10800,
+  "currencies": [],
+  "knownWallets": {},
+  "defaults": {
+    "token": "DMLC",
+    "symbol": "D☮",
+    "currency": null,
+    "priceChart": false
+  }
+}

@@ -329,7 +329,7 @@
       "timestamp": 25541434,
       "amount": 20006766,
       "fee": 10000000,
-      "vendorField": "arkX: profit share",
+      "vendorField": "mlcX: profit share",
       "senderId": "AdVSe37niA3uFUPgCgMUH2tMsHF4LpLoiX",
       "recipientId": "AeS1bT1r3Z7oaax72Hq6wNtNVhe1FKYWjo",
       "senderPublicKey":
@@ -343,7 +343,7 @@
       "knownSender": null,
       "knownRecipient": null,
       "senderDelegate": {
-        "username": "arkx",
+        "username": "mlcx",
         "address": "AdVSe37niA3uFUPgCgMUH2tMsHF4LpLoiX",
         "publicKey":
           "032fcfd19f0e095bf46bd3ada87e283720c405249b1be1a70bad1d5f20095a8515",

@@ -102,6 +102,7 @@ const methods = {
     }
 
     const cryptos = {
+      'MLC': '☮',
       'ARK': 'Ѧ',
       'BTC': 'Ƀ',
       'ETH': 'Ξ',

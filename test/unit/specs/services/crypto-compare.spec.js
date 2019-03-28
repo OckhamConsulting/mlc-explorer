@@ -3,14 +3,15 @@ import store from '@/store'
 
 describe('CryptoCompare Service', () => {
   beforeAll(() => {
+ // store.dispatch('network/setServer', 'https://explorer.laroue.orgo/api/v2')
     store.dispatch('network/setServer', 'https://explorer.ark.io/api/v2')
     store.dispatch('network/setAlias', 'Main')
-    store.dispatch('network/setToken', 'ARK')
-    store.dispatch('currency/setName', 'USD')
+    store.dispatch('network/setToken', 'MLC')
+    store.dispatch('currency/setName', 'EUR')
   })
 
-  it('should return price for ARK in given currency', async () => {
-    const data = await CryptoCompareService.price('USD')
+  it('should return price for MLC in given currency', async () => {
+    const data = await CryptoCompareService.price('EUR')
     expect(data).toBeGreaterThan(0)
   })
 
@@ -45,14 +46,14 @@ describe('CryptoCompare Service', () => {
   })
 
   it('should return year values, even if token matches currency', async () => {
-    store.dispatch('currency/setName', 'ARK')
+    store.dispatch('currency/setName', 'MLC')
     const data = await CryptoCompareService.year()
     expect(data.labels.length).toBeGreaterThanOrEqual(366)
     expect(data.datasets.length).toBeGreaterThanOrEqual(366)
   })
 
   it('should return the daily average for a given timestamp and valid currency', async () => {
-    store.dispatch('currency/setName', 'USD')
+    store.dispatch('currency/setName', 'EUR')
     const data = await CryptoCompareService.dailyAverage(1535190579)
     // CryptoCompare reports different values for BTC and ETH conversion
     expect(data === 0.8434 || data === 0.8496).toBe(true)
@@ -66,7 +67,7 @@ describe('CryptoCompare Service', () => {
 
   it('should return null if not on Main network', async () => {
     store.dispatch('network/setAlias', 'Development')
-    store.dispatch('currency/setName', 'DARK')
+    store.dispatch('currency/setName', 'DMLC')
     const data = await CryptoCompareService.dailyAverage(1535190579)
     expect(data).toBe(null)
   })

@@ -20,7 +20,7 @@ module.exports = {
     browser
       .useXpath()
       .waitForElementVisible('//h1//span')
-      .expect.element("//h1//span[contains(., 'arkpool')]").to.be.visible
+      .expect.element("//h1//span[contains(., 'mlcpool')]").to.be.visible
   },
 
   'it should be possible to navigate to the next page and back': function (browser) {

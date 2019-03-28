@@ -2,17 +2,17 @@ import mixins from '@/mixins'
 import store from '@/store'
 
 const displayCurrency = function(value) {
-  return value.toLocaleString('en-gb', {
+  return value.toLocaleString('fr', {
     style: 'currency',
     currency: 'eur'
   })
 }
 
 describe('readable currency mixin', () => {
-  store.dispatch('network/setToken', 'ARK')
+  store.dispatch('network/setToken', 'MLC')
 
   it('should properly format the given data', () => {
-    expect(mixins.readableCurrency(100000000, null, 'ARK')).toEqual('1 Ѧ')
+    expect(mixins.readableCurrency(100000000, null, 'MLC')).toEqual('1 ☮')
     expect(mixins.readableCurrency(1000000000, null, 'BTC')).toEqual('10 Ƀ')
     expect(mixins.readableCurrency(10000000000, null, 'ETH')).toEqual('100 Ξ')
     expect(mixins.readableCurrency(100000000000, null, 'LTC')).toEqual(`${Number(1000).toLocaleString()} Ł`)

@@ -1,23 +1,23 @@
-# Ark Explorer 3.0
+# MLC Explorer 3.0
 
 <p align="center">
-    <img src="/ARKExplorer.png" />
+    <img src="/banner.png" />
 </p>
 
 > Designed and developed from the ground-up, using lean & fast developmental frameworks (Tailwind CSS & Vue.JS).
 
-[![Build Status](https://badgen.now.sh/circleci/github/ArkEcosystem/explorer)](https://circleci.com/gh/ArkEcosystem/explorer)
-[![Codecov](https://badgen.now.sh/codecov/c/github/arkecosystem/explorer)](https://codecov.io/gh/arkecosystem/explorer)
+[![Build Status](https://badgen.now.sh/circleci/github/laroue/explorer)](https://circleci.com/gh/laroue/explorer)
+[![Codecov](https://badgen.now.sh/codecov/c/github/laroue/explorer)](https://codecov.io/gh/laroue/explorer)
 [![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
 
-You can access it at [https://explorer.ark.io/](https://explorer.ark.io/).
+You can access it at [https://explorer.laroue.org/](https://explorer.laroue.org/).
 
 ## Build Setup
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/ArkEcosystem/explorer
+git clone https://github.com/laroue/explorer
 ```
 
 ### 2. Install Dependencies
@@ -54,7 +54,7 @@ If you are going to host your explorer instance on GitHub Pages you will need to
 yarn build --base https://username.github.io/repository/
 ```
 
-A running instance of the explorer on GitHub Pages can be found at https://arkecosystem.github.io/.
+A running instance of the explorer on GitHub Pages can be found at https://laroue.github.io/.
 
 > This step is not required if you are hosting the explorer on your "root" repository which is usually your username https://username.github.io/.
 
@@ -112,22 +112,23 @@ $ yarn test
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to security@laroue.org. All security vulnerabilities will be promptly addressed.
 
 ## Contributing
 
 * If you find any bugs, submit an [issue](../../issues) or open a [pull-request](../../pulls), helping us catch and fix them.
-* Engage with other users and developers on the [ArkEcosystem Slack](https://ark.io/slack/).
-* Join our [gitter](https://gitter.im/ark-developers/Lobby).
-* [Contribute bounties](https://github.com/ArkEcosystem/bounty-program).
+* Engage with other users and developers on the [MLC Slack](https://laroue.org/slack/).
+* Join our [gitter](https://gitter.im/mlc-developers/Lobby).
+* [Contribute bounties](https://github.com/laroue/bounty-program).
 
 ## Credits
 
 - [Brian Faust](https://github.com/faustbrian)
 - [Lúcio Rubens](https://github.com/luciorubeens)
 - [Alex Barnsley](https://github.com/alexbarnsley)
+- [Luc Talarico](http://github.com/gitockham)
 - [All Contributors](../../contributors)
 
 ## License
 
-[MIT](LICENSE) © [ArkEcosystem](https://ark.io)
+[MIT](LICENSE) © [OCKHAM CONSULTING INSTITUTE](https://ockham.consulting)
